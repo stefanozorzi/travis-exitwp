@@ -15,5 +15,8 @@ install:
   - cd exitwp
   - pip install --upgrade -r pip_requirements.txt
 
+before_script:
+- chmod a+x ./build.sh
+
 script:
   - ../build.sh
