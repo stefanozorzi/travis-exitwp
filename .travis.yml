@@ -7,6 +7,9 @@ addons:
   apt:
     packages:
       - libxml2-utils
+      
+before_install:
+  - chmod +x build.sh
 
 install:
   - cd exitwp
